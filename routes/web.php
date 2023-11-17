@@ -28,3 +28,17 @@ Route::get('/uomo', function () {
 Route::get('/bambino', function () {
     return view('bambino');
 })->name('bambino');
+
+
+// per il momento reindirizzo tutti alla home
+Route::get('/info-legali', function () {
+    return view('home');
+})->name('info-legali');
+
+Route::get('/info-privacy', function () {
+    return view('home');
+})->name('info-privacy');
+
+Route::get('/diritto-recesso', function () {
+    return view('home');
+})->name('diritto-recesso');

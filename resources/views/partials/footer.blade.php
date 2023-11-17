@@ -1,20 +1,17 @@
+@php
+    $menuFooter = config("menues.menuFooter");
+@endphp
+
 <footer>
     <div class="container flex-box">
       <div class="col-left">
         <h3>Boolando s.r.l.</h3>
         <ul class="flex-box">
+            @foreach ($menuFooter as $item)
             <li>
-                <a href="#">Link</a>
+                <a href="{{ route($item['href'])}}">{{ $item['text'] }}</a>
             </li>
-            <li>
-                <a href="#">Link</a>
-            </li>
-            <li>
-                <a href="#">Link</a>
-            </li>
-            {{-- <li v-for="(item,index) in menuFooter" :key="index">
-                <a :href="item.href">{{ item.text }}</a>
-            </li> --}}
+            @endforeach
         </ul>
       </div>
       <div class="col-right">
