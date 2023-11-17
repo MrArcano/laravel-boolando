@@ -26,7 +26,7 @@ return [
     "backImage" => "2b.webp",
     "brand" => "Guess",
     "name" => "Roses Tee",
-    "price" => 20.99,
+    "price" => 29.99,
     "isInFavorites" => true,
     "badges" => [
       [
@@ -41,7 +41,7 @@ return [
     "backImage" => "3b.webp",
     "brand" => "Come Zucchero Filato",
     "name" => "Voglia di colori pastello",
-    "price" => 129.99,
+    "price" => 184.99,
     "isInFavorites" => false,
     "badges" => [
       [
@@ -56,7 +56,7 @@ return [
     "backImage" => "4b.webp",
     "brand" => "Levi's",
     "name" => "Tee Unisex",
-    "price" => 14.99,
+    "price" => 29.99,
     "isInFavorites" => false,
     "badges" => [
       [
@@ -77,16 +77,7 @@ return [
     "name" => "Stripe Bodice",
     "price" => 99.99,
     "isInFavorites" => true,
-    "badges" => [
-      [
-        "type" => "discount",
-        "value" => "-50%"
-      ],
-      [
-        "type" => "tag",
-        "value" => "Sostenibilità"
-      ]
-    ]
+    "badges" => []
   ],
   [
     "id" => 6,
