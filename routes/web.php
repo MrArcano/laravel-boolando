@@ -17,32 +17,18 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/donna', function () {
-    return view('donna');
-})->name('donna');
-
-Route::get('/uomo', function () {
-    return view('uomo');
-})->name('uomo');
-
-Route::get('/bambino', function () {
-    return view('bambino');
-})->name('bambino');
-
 Route::get('/preferiti', function () {
     return view('preferiti');
 })->name('preferiti');
 
+// Route::get('/prodotto', function () {
+//     return view('productDetails');
+// })->name('prodotto');
 
-// per il momento reindirizzo tutti alla home
-Route::get('/info-legali', function () {
-    return view('home');
-})->name('info-legali');
-
-Route::get('/info-privacy', function () {
-    return view('home');
-})->name('info-privacy');
-
-Route::get('/diritto-recesso', function () {
-    return view('home');
-})->name('diritto-recesso');
+Route::get('/prodotto/{slug}',function($slug){
+    $products = config('products');
+    foreach($products as $product){
+        if($product['slug'] === $slug){
+            return view('productDetails',compact('product'));
+    }}
+})->name('prodotto');

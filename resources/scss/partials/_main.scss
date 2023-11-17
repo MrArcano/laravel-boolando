@@ -1,5 +1,6 @@
 main{
     margin-top: 70px;
+    min-height: calc(100vh - 170px);
     .cards{
       padding-top: 24px;
       flex-wrap: wrap;

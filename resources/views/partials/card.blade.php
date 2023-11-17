@@ -1,5 +1,5 @@
 <!-- inizio card -->
-<div class="card">
+<a href="{{ route('prodotto',['slug' => $product['slug']]) }}" class="card">
     <div class="card-top">
         <div class="card-image">
         <img src="{{ Vite::asset('resources/img/') . $product['frontImage']}}" alt="{{$product['frontImage']}}">
@@ -49,5 +49,5 @@
         <span class="old-price">{{ $product['price'] }}&euro;</span>
         @endif
     </div>
-</div>
+</a>
 <!-- fine card -->

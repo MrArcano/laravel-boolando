@@ -8,6 +8,7 @@ return [
     "brand" => "Levi's",
     "name" => "Relaxed Fit",
     "price" => 29.99,
+    "slug" => "levis-relaxed-fit",
     "isInFavorites" => true,
     "badges" => [
       [
@@ -27,6 +28,7 @@ return [
     "brand" => "Guess",
     "name" => "Roses Tee",
     "price" => 29.99,
+    "slug" => "guess-roses-tee",
     "isInFavorites" => true,
     "badges" => [
       [
@@ -42,6 +44,7 @@ return [
     "brand" => "Come Zucchero Filato",
     "name" => "Voglia di colori pastello",
     "price" => 184.99,
+    "slug" => "come-zucchero-filato-voglia-di-colori-pastello",
     "isInFavorites" => false,
     "badges" => [
       [
@@ -57,6 +60,7 @@ return [
     "brand" => "Levi's",
     "name" => "Tee Unisex",
     "price" => 29.99,
+    "slug" => "levis-tee-unisex",
     "isInFavorites" => false,
     "badges" => [
       [
@@ -76,6 +80,7 @@ return [
     "brand" => "Maya Deluxe",
     "name" => "Stripe Bodice",
     "price" => 99.99,
+    "slug" => "maya-deluxe-stripe-bodice",
     "isInFavorites" => true,
     "badges" => []
   ],
@@ -86,6 +91,7 @@ return [
     "brand" => "Esprit",
     "name" => "Maglione - Black",
     "price" => 29.99,
+    "slug" => "esprit-maglione-black",
     "isInFavorites" => true,
     "badges" => [
       [
