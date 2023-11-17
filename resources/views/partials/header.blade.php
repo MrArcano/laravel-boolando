@@ -1,24 +1,26 @@
+@php
+    $menuHeader = config("menues.menuHeader");
+    // dump($menuHeader);
+    // die;
+@endphp
+
 <header>
     <div class="nav-bar container flex-box">
       <div class="text-menu fix-width">
         <ul class="flex-box">
+            @foreach ($menuHeader as $item)
+
             <li>
-                <a href="">Link</a>
+                <a href={{ $item['href'] }}>{{ $item['text'] }}</a>
             </li>
-            <li>
-                <a href="">Link</a>
-            </li>
-            <li>
-                <a href="">Link</a>
-            </li>
-          {{-- <li v-for="(item,index) in menuHeader" :key="index">
-            <a :href="item.href">{{ item.text }}</a>
-          </li> --}}
+
+            @endforeach
+
         </ul>
       </div>
 
       <div class="logo">
-        <a href="#"><img src="../assets/img/boolean-logo.png" alt="Logo"></a>
+        <a href="#"><img src=" {{ Vite::asset('resources/img/boolean-logo.png')}}" alt="Logo"></a>
       </div>
 
       <div class="icon-menu fix-width text-right">
