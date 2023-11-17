@@ -11,7 +11,7 @@
             @foreach ($menuHeader as $item)
 
             <li>
-                <a href={{ route($item['href']) }}>{{ $item['text'] }}</a>
+                <a href="{{ route($item['href']) }}">{{ $item['text'] }}</a>
             </li>
 
             @endforeach
@@ -25,9 +25,9 @@
 
       <div class="icon-menu fix-width text-right">
 
-        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="{{ route('home') }}"><i class="fa-solid fa-user"></i></a>
         <a href="{{ route('preferiti')}}"><i class="fa-regular fa-heart"></i></a>
-        <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+        <a href="{{ route('home') }}"><i class="fa-solid fa-bag-shopping"></i></a>
 
       </div>
     </div>
