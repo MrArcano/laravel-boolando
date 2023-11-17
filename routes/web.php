@@ -27,9 +27,18 @@ Route::get('/preferiti', function () {
 
 Route::get('/prodotto/{slug}',function($slug){
     $products = config('products');
-    foreach($products as $product){
-        if($product['slug'] === $slug){
-            return view('productDetails',compact('product'));
+
+    $product = null;
+    foreach ($products as $item) {
+        if($item['slug'] === $slug){
+            $product = $item;
         }
     }
+
+    if($product){
+        return view('productDetails',compact('product'));
+    }else{
+        abort(404);
+    }
+
 })->name('prodotto');
