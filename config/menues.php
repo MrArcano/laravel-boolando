@@ -4,29 +4,29 @@ return [
     "menuHeader" => [
         [
             "text" => "Donna",
-            "href" => "/donna"
+            "href" => "donna"
         ],
         [
             "text" => "Uomo",
-            "href" => "/uomo"
+            "href" => "uomo"
         ],
         [
             "text" => "Bambino",
-            "href" => "/bambino"
+            "href" => "bambino"
         ],
     ],
     "menuFooter" => [
         [
             "text" => "Informazioni legali",
-            "href" => "/info-legali"
+            "href" => "info-legali"
         ],
         [
             "text" => "Informatica sulla privacy",
-            "href" => "/info-privacy"
+            "href" => "info-privacy"
         ],
         [
             "text" => "Diritto di recesso",
-            "href" => "/diritto-recesso"
+            "href" => "diritto-recesso"
         ],
     ],
 ]

@@ -11,7 +11,7 @@
             @foreach ($menuHeader as $item)
 
             <li>
-                <a href={{ $item['href'] }}>{{ $item['text'] }}</a>
+                <a href={{ route($item['href']) }}>{{ $item['text'] }}</a>
             </li>
 
             @endforeach
@@ -20,7 +20,7 @@
       </div>
 
       <div class="logo">
-        <a href="#"><img src=" {{ Vite::asset('resources/img/boolean-logo.png')}}" alt="Logo"></a>
+        <a href="{{ route('home') }}"><img src="{{ Vite::asset('resources/img/boolean-logo.png') }}" alt="Logo"></a>
       </div>
 
       <div class="icon-menu fix-width text-right">
