@@ -1,17 +1,22 @@
+@php
+    $products = config('products');
+    dump($products);
+@endphp
+
 @extends('layouts.main')
 
 @section('content')
     <div class="container">
         <div class="cards flex-box">
 
-            {{-- <Card v-for="(card , index) in cardsData" :key="'card-' + index" :card="card"/> --}}
+            @foreach ($products as $product)
 
             <!-- inizio card -->
             <div class="card">
               <div class="card-top">
                 <div class="card-image">
-                  {{-- <img :src="getUrl('')" :alt="'img' + card.src">
-                  <img :src="getUrl('b')" :alt="'img' + card.src + 'b'"> --}}
+                  <img src="{{ Vite::asset('resources/img/') . $product['frontImage']}}" alt="{{$product['frontImage']}}">
+                  <img src="{{ Vite::asset('resources/img/') . $product['backImage']}}" alt="{{$product['backImage']}}">
                 </div>
 
                 <div class="hearth">
@@ -32,6 +37,8 @@
               </div>
             </div>
             <!-- fine card -->
+
+            @endforeach
         </div>
     </div>
 @endsection
