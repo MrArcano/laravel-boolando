@@ -30,5 +30,6 @@ Route::get('/prodotto/{slug}',function($slug){
     foreach($products as $product){
         if($product['slug'] === $slug){
             return view('productDetails',compact('product'));
-    }}
+        }
+    }
 })->name('prodotto');

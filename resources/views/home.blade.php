@@ -15,3 +15,7 @@
         </div>
     </div>
 @endsection
+
+@section('title')
+    | Homepage
+@endsection

@@ -20,3 +20,7 @@
         </div>
     </div>
 @endsection
+
+@section('title')
+    | {{ $product['name'] }}
+@endsection

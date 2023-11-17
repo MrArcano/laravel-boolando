@@ -18,3 +18,7 @@
         </div>
     </div>
 @endsection
+
+@section('title')
+    | Preferiti
+@endsection
