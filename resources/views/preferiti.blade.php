@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="container">
-        <h1 class="text-center pt-24">Preferiti</h1>
+        <h1 class="text-center pb-24">Preferiti</h1>
         <div class="cards flex-box">
 
             @foreach ($products as $product)
