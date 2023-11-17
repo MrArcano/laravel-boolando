@@ -12,7 +12,8 @@
     background-color: white;
     font-size: 20px;
 
-    &:hover{
+    &:hover,
+    &.active{
       color: red;
     }
   }

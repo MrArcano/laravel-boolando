@@ -11,12 +11,12 @@ return [
     "isInFavorites" => true,
     "badges" => [
       [
-        "type" => "tag",
-        "value" => "Sostenibilità"
-      ],
-      [
         "type" => "discount",
         "value" => "-50%"
+      ],
+      [
+        "type" => "tag",
+        "value" => "Sostenibilità"
       ]
     ]
   ],
@@ -60,12 +60,12 @@ return [
     "isInFavorites" => false,
     "badges" => [
       [
-        "type" => "tag",
-        "value" => "Sostenibilità"
-      ],
-      [
         "type" => "discount",
         "value" => "-50%"
+      ],
+      [
+        "type" => "tag",
+        "value" => "Sostenibilità"
       ]
     ]
   ],
@@ -79,12 +79,12 @@ return [
     "isInFavorites" => true,
     "badges" => [
       [
-        "type" => "tag",
-        "value" => "Sostenibilità"
-      ],
-      [
         "type" => "discount",
         "value" => "-50%"
+      ],
+      [
+        "type" => "tag",
+        "value" => "Sostenibilità"
       ]
     ]
   ],

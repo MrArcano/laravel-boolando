@@ -1,6 +1,5 @@
 @php
     $products = config('products');
-    dump($products);
 @endphp
 
 @extends('layouts.main')
@@ -19,21 +18,21 @@
                   <img src="{{ Vite::asset('resources/img/') . $product['backImage']}}" alt="{{$product['backImage']}}">
                 </div>
 
-                <div class="hearth">
+                <div class="hearth {{ $product['isInFavorites'] ? 'active' : ''}}">
                     <span>&hearts;</span>
                 </div>
 
                 <div class="badge-box">
-                  {{-- <span v-if="card.badgeRed" class="badge badge-red">{{ card.badgeRed }}</span>
-                  <span v-if="card.badgeGreen" class="badge badge-green">{{ card.badgeGreen }}</span> --}}
+                    @foreach ($product['badges'] as $badge)
+                    <span class="badge {{ $badge['type']=== 'tag' ? 'badge-green' : 'badge-red'}}">{{ $badge['value'] }}</span>
+                    @endforeach
                 </div>
               </div>
 
               <div class="card-bot">
-                {{-- <span class="brand block-box">{{ card.brand }}</span>
-                <span class="name-item block-box">{{ card.text }}</span>
-                <span class="new-price">{{ card.newPrice }}&euro;</span>
-                <span v-if="card.oldPrice" class="old-price">{{ card.oldPrice }}&euro;</span> --}}
+                <span class="brand block-box">{{ $product['brand'] }}</span>
+                <span class="name-item block-box">{{ $product['name'] }}</span>
+                <span class="new-price">{{ $product['price'] }}&euro;</span>
               </div>
             </div>
             <!-- fine card -->
