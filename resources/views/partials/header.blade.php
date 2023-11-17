@@ -26,7 +26,7 @@
       <div class="icon-menu fix-width text-right">
 
         <a href="#"><i class="fa-solid fa-user"></i></a>
-        <a href="#"><i class="fa-regular fa-heart"></i></a>
+        <a href="{{ route('preferiti')}}"><i class="fa-regular fa-heart"></i></a>
         <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
 
       </div>

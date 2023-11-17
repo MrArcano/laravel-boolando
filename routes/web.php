@@ -29,6 +29,10 @@ Route::get('/bambino', function () {
     return view('bambino');
 })->name('bambino');
 
+Route::get('/preferiti', function () {
+    return view('preferiti');
+})->name('preferiti');
+
 
 // per il momento reindirizzo tutti alla home
 Route::get('/info-legali', function () {

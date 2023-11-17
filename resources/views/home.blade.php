@@ -59,7 +59,6 @@
 
                     @if($product['withDiscount'])
                     <span class="old-price">{{ $product['price'] }}&euro;</span>
-                    <span>ciao</span>
                     @endif
                 </div>
             </div>
